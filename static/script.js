@@ -1,7 +1,7 @@
 document.getElementById('generate-btn').addEventListener('click', function() {
     const data = document.getElementById('data').value;
     if (data) {
-        fetch('http://127.0.0.1:5000/generate_qr', {
+        fetch('/generate_qr', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
